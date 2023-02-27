@@ -72,11 +72,21 @@ public class AppTest {
 
         // Valores del angulo que no estén entre 0 y PI/2 deben lanzar una excepción
         // - Ejercicio: 
+        try{
         App.calcular_T_dado_X(0, 0, Math.PI, 0);
+        fail();
+     }catch (Exception e) {
+        System.err.println("calcular_T_dado_X: " + e.getMessage());
+    }
         
         // Valor PI/2 para el ángulo debe lanzar una excepción
         // - Ejercicio: 
-        App.calcular_T_dado_X(0, 0, Math.PI/2, 0);
+        try{
+            App.calcular_T_dado_X(0, 0, Math.PI/2, 0);
+            fail();
+        }catch (Exception e) {
+            System.err.println("calcular_Y_dado_T: " + e.getMessage());
+        }
         
     }
 
@@ -84,10 +94,22 @@ public class AppTest {
     @Test
     public void calcular_Y_dado_T() {
         // Valores negativos de t deben lanzar una excepción
-        // - Ejercicio: App.calcular_Y_dado_T(0, 0, 0, -9.81, -1);
+        // - Ejercicio: 
+        try{
+        App.calcular_Y_dado_T(0, 0, 0, -9.81, -1);
+        fail();
+        }catch (Exception e) {
+            System.err.println("calcular_Y_dado_T: " + e.getMessage());
+        }
         
         // Valores del angulo que no estén entre 0 y PI/2 deben lanzar una excepción
-        // - Ejercicio: App.calcular_Y_dado_T(0, 0, Math.PI,-9.81, 0);
+        // - Ejercicio: 
+        try{
+        App.calcular_Y_dado_T(0, 0, Math.PI,-9.81, 0);
+        fail();
+        }catch (Exception e) {
+            System.err.println("calcular_Y_dado_T: " + e.getMessage());
+        }
         
         // Valor de t igual a 0, debe devolver el mismo valor que x_ini;
         // hacemos un par de comprobaciones
