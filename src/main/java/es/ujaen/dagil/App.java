@@ -55,12 +55,17 @@ public class App {
 
     public static double calcular_T_dado_X(final double x_ini, final double v_ini, final double angulo,
             final double x_fin) {
-                final int t;
-                if(x_ini==x_fin){
-                    t=0;
-                    return t;
-                }
-            return (double) 0;
+            final double t;
+            if(x_ini==x_fin){
+                t=0;
+                return t;
+            }
+            if (angulo < 0 || angulo > Math.PI / 2)
+            throw (new ArithmeticException("El ángulo debe estar entre 0 y PI/2"));
+            if(angulo == Math.PI /2)
+            throw (new ArithmeticException("El ángulo no puede ser PI/2"));
+            t=(x_fin - x_ini) / (v_ini * Math.cos(angulo));
+            return t;
     }
 
     /**

@@ -60,18 +60,23 @@ public class AppTest {
 
         // Para una velocidad de 26m/s, un ángulo de 40º, y x final de 67.86m, debe
         // devolver 3.41 segundos
-        // - Ejercicio: assertEquals(3.41, App.calcular_T_dado_X(0, 26, Math.toRadians(40), 67.86), 0.1);
+        // - Ejercicio: 
+        assertEquals(3.41, App.calcular_T_dado_X(0, 26, Math.toRadians(40), 67.86), 0.1);
 
         // Si parte de un x_ini distinto, y se incrementa en el mismo valor el x_fin, el
         // tiempo debe seguir siendo el mismo
-        // - Ejercicio: assertEquals(3.41, App.calcular_T_dado_X(-13, 26, Math.toRadians(40), 67.86 - 13), 0.1);
-        // - Ejercicio: assertEquals(3.41, App.calcular_T_dado_X(22, 26, Math.toRadians(40), 67.86 + 22), 0.1);
+        // - Ejercicio: 
+        assertEquals(3.41, App.calcular_T_dado_X(-13, 26, Math.toRadians(40), 67.86 - 13), 0.1);
+        // - Ejercicio: 
+        assertEquals(3.41, App.calcular_T_dado_X(22, 26, Math.toRadians(40), 67.86 + 22), 0.1);
 
         // Valores del angulo que no estén entre 0 y PI/2 deben lanzar una excepción
-        // - Ejercicio: App.calcular_T_dado_X(0, 0, Math.PI, 0);
+        // - Ejercicio: 
+        App.calcular_T_dado_X(0, 0, Math.PI, 0);
         
         // Valor PI/2 para el ángulo debe lanzar una excepción
-        // - Ejercicio: App.calcular_T_dado_X(0, 0, Math.PI/2, 0);
+        // - Ejercicio: 
+        App.calcular_T_dado_X(0, 0, Math.PI/2, 0);
         
     }
 
