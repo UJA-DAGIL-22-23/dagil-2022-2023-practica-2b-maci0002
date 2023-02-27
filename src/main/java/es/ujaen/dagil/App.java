@@ -148,7 +148,15 @@ public class App {
 
     public static boolean impacta_en_muro(final double x_ini, final double y_ini, final double v_ini, final double angulo, final double g,
             final double posicion_x_muro, final double altura_muro) {
-        return (boolean) false;
+                if (angulo < 0 || angulo > Math.PI / 2)
+                throw (new ArithmeticException("El ángulo debe estar entre 0 y PI/2"));
+        double result=calcular_Y_dado_X(x_ini, y_ini, v_ini, angulo, g, posicion_x_muro);
+        if(altura_muro> result)
+            return (boolean) true;
+        else
+            return (boolean) false;
+        
+    
     }
 
 
