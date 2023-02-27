@@ -87,6 +87,7 @@ public class App {
 
     public static double calcular_Y_dado_T(final double y_ini, final double v_ini, final double angulo, final double g,
             final double t) {
+        final double result;
         if(t<0){
             throw (new ArithmeticException("t no puede ser un valor negativo o 0"));
         }
@@ -95,7 +96,9 @@ public class App {
         if(t==0){
             return y_ini;
         }
-        return (double) 0;
+        double v_0y= v_ini*Math.sin(angulo);
+        result=y_ini + v_0y * t + (1 / 2.0) * g * t * t;
+        return result;
     }
     /**
      * Calcula el valor que tendra Y para un determinado valor de X

@@ -123,12 +123,15 @@ public class AppTest {
 
         // Para una velocidad de 26m/s, un ángulo de 40º, y 3.41/2 segundos, Y debe
         // devolver 14.23m
-        // - Ejercicio: assertEquals(14.23, App.calcular_Y_dado_T(0, 26, Math.toRadians(40), -9.81, 3.41/2), 0.1);
+        // - Ejercicio: 
+        assertEquals(14.23, App.calcular_Y_dado_T(0, 26, Math.toRadians(40), -9.81, 3.41/2), 0.1);
 
         // Si en vez de partir desde Y=0, damos otro valor, debe incrementarse en dicho
         // valor
-        // - Ejercicio: assertEquals(14.23+10, App.calcular_Y_dado_T(0+10, 26, Math.toRadians(40), -9.81, 3.41/2), 0.1);
-        // - Ejercicio: assertEquals(14.23-10, App.calcular_Y_dado_T(0-10, 26, Math.toRadians(40), -9.81, 3.41/2), 0.1);
+        // - Ejercicio: 
+        assertEquals(14.23+10, App.calcular_Y_dado_T(0+10, 26, Math.toRadians(40), -9.81, 3.41/2), 0.1);
+        // - Ejercicio: 
+        assertEquals(14.23-10, App.calcular_Y_dado_T(0-10, 26, Math.toRadians(40), -9.81, 3.41/2), 0.1);
     }
 
     @Test
