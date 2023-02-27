@@ -55,7 +55,8 @@ public class AppTest {
     @Test
     public void calcular_T_dado_X() {
         // Si x_ini == x_fin, t debe ser 0
-        // - Ejercicio: assertEquals(0, App.calcular_T_dado_X(-10, 26, Math.toRadians(40), -10), 0.1);
+        // - Ejercicio: 
+        assertEquals(0, App.calcular_T_dado_X(-10, 26, Math.toRadians(40), -10), 0.1);
 
         // Para una velocidad de 26m/s, un ángulo de 40º, y x final de 67.86m, debe
         // devolver 3.41 segundos

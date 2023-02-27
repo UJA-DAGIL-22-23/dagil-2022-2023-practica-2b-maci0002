@@ -55,6 +55,11 @@ public class App {
 
     public static double calcular_T_dado_X(final double x_ini, final double v_ini, final double angulo,
             final double x_fin) {
+                final int t;
+                if(x_ini==x_fin){
+                    t=0;
+                    return t;
+                }
             return (double) 0;
     }
 
