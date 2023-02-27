@@ -119,7 +119,14 @@ public class App {
 
     public static double calcular_Y_dado_X(final double x_ini, final double y_ini, final double v_ini, final double angulo, final double g,
             final double x_fin) {
-        return (double) 0;
+                if (angulo < 0 || angulo > Math.PI / 2)
+            throw (new ArithmeticException("El ángulo debe estar entre 0 y PI/2"));
+        if(x_fin==x_ini){
+            return y_ini;
+        }
+        double t=calcular_T_dado_X(x_ini, v_ini, angulo, x_fin);
+        double y=y_ini+v_ini*Math.sin(angulo)*t+(1/2.0)*g*t*t;
+        return y;
     }
 
      /**
