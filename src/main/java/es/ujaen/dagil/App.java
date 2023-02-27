@@ -87,11 +87,14 @@ public class App {
 
     public static double calcular_Y_dado_T(final double y_ini, final double v_ini, final double angulo, final double g,
             final double t) {
-        if(t<=0){
+        if(t<0){
             throw (new ArithmeticException("t no puede ser un valor negativo o 0"));
         }
         if (angulo < 0 || angulo > Math.PI / 2)
             throw (new ArithmeticException("El ángulo debe estar entre 0 y PI/2"));
+        if(t==0){
+            return y_ini;
+        }
         return (double) 0;
     }
     /**

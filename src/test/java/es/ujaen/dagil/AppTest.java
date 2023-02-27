@@ -113,8 +113,10 @@ public class AppTest {
         
         // Valor de t igual a 0, debe devolver el mismo valor que x_ini;
         // hacemos un par de comprobaciones
-        // - Ejercicio: assertEquals(10, App.calcular_Y_dado_T(10, 29, 0, -9.81, 0), 0);
-        // - Ejercicio: assertEquals(4, App.calcular_Y_dado_T(4, 12, 0, -9.81, 0), 0);
+        // - Ejercicio: 
+        assertEquals(10, App.calcular_Y_dado_T(10, 29, 0, -9.81, 0), 0);
+        // - Ejercicio: 
+        assertEquals(4, App.calcular_Y_dado_T(4, 12, 0, -9.81, 0), 0);
 
 
         // Según https://www.areaciencias.com/fisica/tiro-parabolico-formulas/
