@@ -1,4 +1,15 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10292072&assignment_repo_type=AssignmentRepo)
+### Alumno:
+Miguel Ángel Carrasco Infante (maci0002@red.ujaen.es)
+### Salida:
+```
+calcular_Y_dado_T: t no puede ser un valor negativo o 0
+calcular_Y_dado_T: El ángulo debe estar entre 0 y PI/2
+calcular_Y_dado_X: El ángulo debe estar entre 0 y PI/2
+calcular_impacta_en_muro: El ángulo debe estar entre 0 y PI/2
+calcular_X_dado_T: El tiempo no puede ser negativo.
+calcular_X_dado_T: El ángulo debe estar entre 0 y PI/2
+```
 # Tiro parabólico: TDD+Java+Maven+JUnit 4
 ### Ejemplo de TDD para la asignatura Desarrollo Ágil.
 Ejemplo que servirá de base para un ejercicio de TDD en el que se use Java, Maven JUNit4 y VS Code.
